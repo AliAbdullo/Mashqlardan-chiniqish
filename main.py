@@ -44,3 +44,22 @@ def oraliq(min,max):
     sonlar.append(min)
     min+=1
     return sonlar
+
+#Funksiyalarni tsiklda ishlatish
+print("\nSaytimizdagi avtolar royxatini shakilantiramiz.")
+avtolar=[] #salondagi avtolar uchun bo'sh ro'yxat
+while True:
+  print("\nQuydagi malumotlarni kiriting ",end='' )
+  kompaniya=input("Ishlab chiqaruvchi: ")
+  model=input("Modeli: ")
+  rangi=input("Rangi: ")
+  korobka=input("Korobka: ")
+  yili=input("Ishlab chiqarilgan yili: ")
+  narxi=input("Narxi: ")
+
+  avtolar.append(avto_info(kompaniya, model,rangi,korobka,yili,narxi))
+  javob=input("Yana avto qo'shasizmi? (yes/no):")
+  if javob=='no':
+    break
+
+
